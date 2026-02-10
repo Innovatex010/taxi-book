@@ -1,0 +1,153 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "UrbanCab",
+      "archetype": "The Performance Pro",
+      "tone": "Reliable, Efficient, Modern, Urban",
+      "theme_mode": "light",
+      "primary_color_rationale": "Electric Indigo for trust and digital efficiency, mixed with Amber for taxi heritage visibility."
+    },
+    "typography": {
+      "headings": {
+        "font_family": "Lexend, sans-serif",
+        "weights": ["500", "600", "700"],
+        "tracking": "-0.02em",
+        "description": "Designed for transport and readability. Use for all H1-H4."
+      },
+      "body": {
+        "font_family": "Satoshi, Inter, sans-serif",
+        "weights": ["400", "500"],
+        "leading": "1.6",
+        "description": "Clean, geometric sans for high-density data readability."
+      },
+      "imports": [
+        "@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');"
+      ]
+    },
+    "colors": {
+      "palette": {
+        "primary": {
+          "DEFAULT": "#4F46E5",
+          "foreground": "#FFFFFF",
+          "hover": "#4338CA",
+          "active": "#3730A3"
+        },
+        "secondary": {
+          "DEFAULT": "#F59E0B",
+          "foreground": "#171717",
+          "hover": "#D97706"
+        },
+        "accent": {
+          "DEFAULT": "#F1F5F9",
+          "foreground": "#0F172A"
+        },
+        "background": {
+          "DEFAULT": "#FAFAFA",
+          "paper": "#FFFFFF",
+          "subtle": "#F4F4F5"
+        },
+        "text": {
+          "primary": "#0F172A",
+          "secondary": "#64748B",
+          "muted": "#94A3B8"
+        },
+        "status": {
+          "success": "#10B981",
+          "warning": "#F59E0B",
+          "error": "#EF4444",
+          "info": "#3B82F6"
+        }
+      },
+      "gradients": {
+        "hero": "linear-gradient(135deg, #4F46E5 0%, #818CF8 100%)",
+        "subtle_glow": "radial-gradient(circle at 50% 50%, rgba(79, 70, 229, 0.08) 0%, transparent 70%)"
+      }
+    },
+    "layout": {
+      "spacing_scale": {
+        "section_gap": "py-24 md:py-32",
+        "container_padding": "px-6 md:px-12",
+        "component_gap": "gap-6"
+      },
+      "grid_systems": {
+        "marketing": "grid-cols-1 md:grid-cols-12 gap-8 md:gap-12",
+        "dashboard": "grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+      },
+      "container_width": "max-w-7xl mx-auto",
+      "border_radius": {
+        "card": "rounded-2xl",
+        "button": "rounded-lg",
+        "input": "rounded-md"
+      }
+    },
+    "visual_enhancers": {
+      "shadows": {
+        "card": "0 2px 8px -2px rgba(0, 0, 0, 0.05), 0 4px 16px -4px rgba(0, 0, 0, 0.02)",
+        "float": "0 20px 40px -8px rgba(0, 0, 0, 0.12)",
+        "glow": "0 0 20px rgba(79, 70, 229, 0.15)"
+      },
+      "glassmorphism": {
+        "class": "bg-white/80 backdrop-blur-xl border border-white/20 shadow-sm"
+      },
+      "borders": {
+        "subtle": "border border-slate-200/60"
+      }
+    },
+    "animations": {
+      "micro_interactions": {
+        "hover_lift": "transition-all duration-300 hover:-translate-y-1 hover:shadow-lg",
+        "button_press": "active:scale-95 transition-transform duration-100",
+        "fade_in": "animate-in fade-in duration-500"
+      }
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-white hover:bg-primary/90 shadow-md hover:shadow-lg transition-all rounded-lg font-medium px-6 py-3",
+      "secondary": "bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 hover:border-slate-300 shadow-sm transition-all rounded-lg font-medium px-6 py-3",
+      "ghost": "text-slate-600 hover:text-primary hover:bg-primary/5 transition-colors rounded-lg px-4 py-2"
+    },
+    "cards": {
+      "base": "bg-white rounded-2xl border border-slate-100 shadow-[0_2px_10px_-2px_rgba(0,0,0,0.04)] p-6 hover:shadow-[0_8px_30px_-4px_rgba(0,0,0,0.08)] transition-shadow duration-300",
+      "dashboard_widget": "bg-white rounded-xl border border-slate-200/60 p-5 h-full flex flex-col justify-between"
+    },
+    "inputs": {
+      "base": "bg-slate-50 border border-slate-200 focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all rounded-lg px-4 py-3 text-slate-900 placeholder:text-slate-400"
+    },
+    "navigation": {
+      "marketing_nav": "fixed top-4 left-1/2 -translate-x-1/2 w-[90%] max-w-5xl bg-white/80 backdrop-blur-md border border-white/20 shadow-sm rounded-full px-6 py-3 z-50 flex items-center justify-between",
+      "dashboard_sidebar": "fixed left-0 top-0 h-full w-64 bg-slate-900 text-white p-6 z-40 border-r border-slate-800"
+    }
+  },
+  "assets": {
+    "images": {
+      "hero_bg": "https://images.unsplash.com/photo-1768291424878-3dbd4118d23d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NjZ8MHwxfHNlYXJjaHwzfHx1cmJhbiUyMGNpdHklMjB0YXhpJTIwcGFzc2VuZ2VyJTIwaGFwcHl8ZW58MHx8fHwxNzcwNzE0NDI2fDA&ixlib=rb-4.1.0&q=85",
+      "vehicle_sedan": "https://images.unsplash.com/photo-1741313240179-387dac3fddbe?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzl8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3aGl0ZSUyMHNlZGFuJTIwdGF4aSUyMHNpZGUlMjB2aWV3fGVufDB8fHx8MTc3MDcxNDQyNnww&ixlib=rb-4.1.0&q=85",
+      "vehicle_luxury": "https://images.unsplash.com/photo-1764089859662-7b4773dff85b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjBibGFjayUyMGNhciUyMGNoYXVmZmV1ciUyMHNlcnZpY2V8ZW58MHx8fHwxNzcwNzE0NDI3fDA&ixlib=rb-4.1.0&q=85",
+      "driver_profile": "https://images.unsplash.com/photo-1761579638951-9121bbfcb2a6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNTl8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjB0YXhpJTIwZHJpdmVyJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzcwNzE0NDI3fDA&ixlib=rb-4.1.0&q=85",
+      "map_abstract": "https://images.unsplash.com/photo-1717343824623-06293a62a70d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDV8MHwxfHNlYXJjaHw0fHxjaXR5JTIwbWFwJTIwYWJzdHJhY3QlMjBsaWdodCUyMHN0eWxpemVkfGVufDB8fHx8MTc3MDcxNDQyOHww&ixlib=rb-4.1.0&q=85"
+    },
+    "icons": {
+      "library": "lucide-react",
+      "style": "stroke-width=1.5"
+    }
+  },
+  "instructions_to_main_agent": [
+    "INSTALL_DEPENDENCIES: npm install lucide-react framer-motion clsx tailwind-merge date-fns react-day-picker",
+    "THEME_SETUP: Ensure Tailwind is configured with the custom colors defined in 'design_system.colors'.",
+    "FONTS: Import 'Lexend' and 'Inter' in index.css.",
+    "LAYOUT_STRATEGY: Use the 'marketing_nav' style for the landing page. It should be floating and glassmorphic.",
+    "DASHBOARD_STRATEGY: Create a distinct layout for Admin/Dealer (Sidebar based) vs Customer (Top-nav based).",
+    "BOOKING_FLOW: The booking wizard should be a multi-step process with clear progress indicators. Use 'AnimatePresence' from framer-motion for smooth step transitions.",
+    "MAP_INTEGRATION: For the MVP, use the 'map_abstract' image as a background for the route selection step if a real map API is not available. Overlay route lines using SVG if needed.",
+    "ACCESSIBILITY: Ensure all form inputs have associated labels and focus states are visible (ring-2 ring-primary).",
+    "TESTING: Add data-testid attributes to all interactive elements (buttons, inputs, cards)."
+  ],
+  "universal_guidelines": [
+    "Do not use gradients for text.",
+    "Avoid 'Inter' for headings - use 'Lexend'.",
+    "Use generous padding (p-6, p-8) inside cards.",
+    "Never use pure black (#000000) - use Slate-900 (#0F172A).",
+    "Ensure buttons have a 'click' animation (scale-95)."
+  ]
+}
